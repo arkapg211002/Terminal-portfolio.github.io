@@ -1,0 +1,271 @@
+<!-- Terminal portfolio website -->>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1" />
+    <link rel="icon" href="./lg.png" />
+    <title>Arkapratim-Ghosh-Portfolio-22</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+    <script src="https://unpkg.com/jquery.terminal/js/jquery.terminal.min.js"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/jquery.terminal/css/jquery.terminal.min.css" />
+
+    <style type="text/css">
+        .terminal,
+        span,
+        .cmd,
+        div {
+            --color: rgba(222, 227, 222, 0.99);
+        }
+
+        .terminal,
+        span {
+            --size: 1.4;
+        }
+
+        body {
+            background-color: #000000;
+        }
+        
+        .terminal span {
+            color: #00ff00;
+        }
+
+        .terminal .cmd {
+            color: #00ff00;
+        }
+
+        .terminal .prompt {
+            color: #00ff00;
+        }
+
+        ::-webkit-scrollbar {
+            width: 0.5em;
+        }
+
+        
+
+        ::-webkit-scrollbar-thumb {
+            background-color: darkgrey;
+            outline: 1px solid slategrey;
+        }
+
+        .terminal .cursor {
+            background-color: #00ff00;
+        }
+
+        .terminal .error {
+            color: #ff0000;
+        }
+
+        .terminal .cmd {
+            color: #00ff00;
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+    <script>
+        $('body').terminal({
+            
+            
+            help: function () {
+                this.echo(' \n Type abt to know more about me' +
+                    ' \n Type edu to know more about me' +
+                    ' \n Type exp to know more about me' +
+                    ' \n Type skl to know langauges and tools I use' +
+                    ' \n Type prj to know about projects I have done so far' +
+                    ' \n Type ccf to know about courses and certificates I have done and gained so far' +
+                    
+                    ' \n Type cnt to know about how to contact me and get links'+
+                    ' \n'+
+                    ' \n----------------------------------------------------------------------'+'\n'
+
+                );
+            },
+
+            abt: function () {
+                this.echo(' \n I am a 2nd year student at Techno Main Saltlake' +
+                    ' \n I am a Computer Science and Engineering student' +
+                    ' \n I am a Web Developer' +
+                    ' \n I am a Competitive Programmer'+
+                    ' \n'+
+                    ' \n----------------------------------------------------------------------'+'\n'
+                    
+                );
+            },
+            
+            edu: function () {
+                this.echo(' \n I am a 2nd year student at Techno Main Saltlake' +
+                    ' \n I am a Computer Science and Engineering student' +
+                    ' \n I am a Web Developer' +
+                    ' \n I am a Competitive Programmer'+
+                    ' \n'+
+                    ' \n EDUCATION'+'\n'+
+                    ' \n Bachelor Of Technology in Computer Science And Engineering'+
+                    ' \n Techno Main Saltlake (2021 - 2025)'+
+                    ' \n I qualified in WBJEE 2021 with a rank of 2993 and took admission here in second round of counselling'+
+                    ' \n'+
+                    ' \n Indian Certificate of Secondary Education (ICSE)'+
+                    ' \n Pramila Memorial Institute (2005 - 2018)'+
+                    ' \n I got 96.6% in the 10th standard exam and took up science stream for higher secondary classes'+
+                    ' \n'+
+                    ' \n Indian School Certificate (ISC)'+
+                    ' \n Pramila Memorial Institute (2019 - 2020)'+
+                    ' \n I got 94.75% in the final 12th standard exam, secured AIR 40316 in JEE MAIN and WBR 2993 in WBJEE'
+                    +' \n'+
+                    ' \n----------------------------------------------------------------------'+'\n'
+                );
+            },
+
+            exp: function() {
+                this.echo(
+                    ' \n Google Cloud Ready Facilitator Program'+
+                    ' \n Google Cloud (Apr 2022 - Jun 2022 · 3 mos)'+
+                    ' \n Completed all 4 tracks and got a hands-on learning of google cloud basics'+
+                    ' \n'+
+                    ' \n College Ambassador'+
+                    ' \n Techfest IIT Bombay (Nov 2021 - Mar 2022 · 5 mos)'+
+                    ' \n I am a college ambassador for Techfest IIT Bombay and I am responsible for promoting the fest in my college'+
+                    ' \n'+
+                    ' \n Postman Student Expert'+
+                    ' \n Postman (Sep 2021 - Present · 3 mos)'+
+                    ' \n I am a Postman Student Expert and I am responsible for promoting Postman in my college'+
+                    ' \n'+
+                    ' \n----------------------------------------------------------------------'+'\n'
+
+
+                );
+
+
+            },
+
+            skl: function () {
+                this.echo(
+                    '\n JAVA         |--------> 80%'+
+                    '\n C            |-----> 50%'+
+                    '\n Python       |-------> 70%'+
+                    '\n HTML         |---------> 90%'+
+                    '\n CSS          |------> 65%'+
+                    '\n JavaScript   |-----> 50%'+
+                    '\n Bootstrap    |------> 55%'+
+                    '\n PHP          |-------> 70%'+
+                    '\n MySQL        |-----> 50%'+
+                    '\n Django       |----> 40%'+
+                    '\n XAMPP        |----> 40%'+
+                    '\n Git & Github |--------> 80%'+
+                    '\n'+
+                    ' \n----------------------------------------------------------------------'+'\n'
+
+
+
+                );
+
+            },
+
+            prj: function () {
+                this.echo('\n My recent projects'+
+                    '\n'+
+                    '\n 1. Doctors Clinic'+
+                    '\n -----------------------'+
+                    '\n Link: https://gngkaijl2bh7ohhsun0tgg.on.drv.tw/www.Doctors%20Clinic/'+
+                    '\n Doctors Clinic is a website for a clinic that lists doctors. Made using HTML, CSS, JAVAScript, Bootstrap.'+                    
+                    '\n'+
+                    '\n 2. PHP Crud'+
+                    '\n -----------------------'+
+                    '\n Link: https://arkapratimphpcrud2022.000webhostapp.com/'+
+                    '\n PHP Crud is a website that performs CRUD operations on a database. Made using HTML, CSS, PHP, MySQL.'+
+                    '\n'+
+                    '\n 3. Microtech'+
+                    '\n -----------------------'+
+                    '\n Link https://microtech-ms-clone-20122022.000webhostapp.com/'+
+                    '\n Microsoft website clone made using HTML, CSS, JavaScript, and Bootstrap. Also made some changes to the carousal, links, icons, buttons, footer, etc.'+
+                    '\n'+
+                    '\n 4. 6API'+
+                    '\n -----------------------'+
+                    '\n Link: https://jewel15122022.000webhostapp.com/'+
+                    '\n Implemented 6 simple APIs using Javascript, HTML, CSS, PHP, jQuery, Bootstrap, Spline.'+
+                    '\n'+
+                    '\n 5. FoodSite'+
+                    '\n -----------------------'+
+                    '\n Link: https://food17122022.000webhostapp.com/'+
+                    '\n Frontend design of a simple food delivery site made using HTML CSS only.'+
+                    '\n'+
+                    '\n 6. Portfolio'+
+                    '\n -----------------------'+
+                    '\n Link: https://arkapg211002.github.io/'+
+                    '\n My portfolio made using HTML, CSS, JavaScript, and Bootstrap.'+
+                    '\n'+
+                    ' \n----------------------------------------------------------------------'+'\n'                
+                );
+
+            },
+
+            ccf: function () {
+                this.echo(
+                    '\n courses      |-----> 23'+
+                    '\n certificates |-----> 17'+
+                    ' \n 1. Divide and Conquer, Sorting and Searching, and Randomized Algorithms'+
+                    ' \n 2. Introduction to Scripting in Python'+
+                    ' \n 3. Postman Student Expert'+
+                    ' \n 4. Ethical hacking Essentials'+
+                    ' \n 5. Microsoft Azure Fundamentals'+
+
+                    ' \n 6. Google Cloud Ready Facilitator Program'+
+                    ' \n ...'+
+                    ' \n'+
+                    ' \n More details on LinkdeIn: https://www.linkedin.com/in/arkapratim-ghosh21102002/'+
+                    ' \n----------------------------------------------------------------------'+'\n'
+                
+                
+                );
+            },
+
+            
+
+            cnt: function () {
+                this.echo(
+                    '\n Email: arkapratimghosh2002@gmail.com' + 
+                    '\n LinkedIn: https://www.linkedin.com/in/arkapratim-ghosh21102002/' +
+                    '\n Github: https://github.com/arkapg211002' +
+                    '\n Facebook: https://www.facebook.com/profile.php?id=100073622645041'+
+                    '\n Instagram: https://www.instagram.com/arkapratimghosh2002/'+
+                    '\n Twitter: https://twitter.com/APGhosh2002'+
+                    '\n'+
+                    ' \n----------------------------------------------------------------------'+'\n'
+                );
+                    
+            },
+
+            clr: function () {
+                this.clear();
+            },
+
+
+
+        }, {
+            greetings: 'Welcome to my Portfolio © 2022 ARKAPRATIM GHOSH' +
+                ' \n \r\n \u2584\u2584\u2584       \u2588\u2588\u2580\u2588\u2588\u2588   \u2588\u2588 \u2584\u2588\u2580\u2584\u2584\u2584       \u2588\u2588\u2593\u2588\u2588\u2588   \u2588\u2588\u2580\u2588\u2588\u2588   \u2584\u2584\u2584     \u2584\u2584\u2584\u2588\u2588\u2588\u2588\u2588\u2593 \u2588\u2588\u2593 \u2588\u2588\u2588\u2584 \u2584\u2588\u2588\u2588\u2593     \u2584\u2588\u2588\u2588\u2588  \u2588\u2588\u2591 \u2588\u2588  \u2592\u2588\u2588\u2588\u2588\u2588    \u2588\u2588\u2588\u2588\u2588\u2588  \u2588\u2588\u2591 \u2588\u2588    \r\n\u2592\u2588\u2588\u2588\u2588\u2584    \u2593\u2588\u2588 \u2592 \u2588\u2588\u2592 \u2588\u2588\u2584\u2588\u2592\u2592\u2588\u2588\u2588\u2588\u2584    \u2593\u2588\u2588\u2591  \u2588\u2588\u2592\u2593\u2588\u2588 \u2592 \u2588\u2588\u2592\u2592\u2588\u2588\u2588\u2588\u2584   \u2593  \u2588\u2588\u2592 \u2593\u2592\u2593\u2588\u2588\u2592\u2593\u2588\u2588\u2592\u2580\u2588\u2580 \u2588\u2588\u2592    \u2588\u2588\u2592 \u2580\u2588\u2592\u2593\u2588\u2588\u2591 \u2588\u2588\u2592\u2592\u2588\u2588\u2592  \u2588\u2588\u2592\u2592\u2588\u2588    \u2592 \u2593\u2588\u2588\u2591 \u2588\u2588\u2592   \r\n\u2592\u2588\u2588  \u2580\u2588\u2584  \u2593\u2588\u2588 \u2591\u2584\u2588 \u2592\u2593\u2588\u2588\u2588\u2584\u2591\u2592\u2588\u2588  \u2580\u2588\u2584  \u2593\u2588\u2588\u2591 \u2588\u2588\u2593\u2592\u2593\u2588\u2588 \u2591\u2584\u2588 \u2592\u2592\u2588\u2588  \u2580\u2588\u2584 \u2592 \u2593\u2588\u2588\u2591 \u2592\u2591\u2592\u2588\u2588\u2592\u2593\u2588\u2588    \u2593\u2588\u2588\u2591   \u2592\u2588\u2588\u2591\u2584\u2584\u2584\u2591\u2592\u2588\u2588\u2580\u2580\u2588\u2588\u2591\u2592\u2588\u2588\u2591  \u2588\u2588\u2592\u2591 \u2593\u2588\u2588\u2584   \u2592\u2588\u2588\u2580\u2580\u2588\u2588\u2591   \r\n\u2591\u2588\u2588\u2584\u2584\u2584\u2584\u2588\u2588 \u2592\u2588\u2588\u2580\u2580\u2588\u2584  \u2593\u2588\u2588 \u2588\u2584\u2591\u2588\u2588\u2584\u2584\u2584\u2584\u2588\u2588 \u2592\u2588\u2588\u2584\u2588\u2593\u2592 \u2592\u2592\u2588\u2588\u2580\u2580\u2588\u2584  \u2591\u2588\u2588\u2584\u2584\u2584\u2584\u2588\u2588\u2591 \u2593\u2588\u2588\u2593 \u2591 \u2591\u2588\u2588\u2591\u2592\u2588\u2588    \u2592\u2588\u2588    \u2591\u2593\u2588  \u2588\u2588\u2593\u2591\u2593\u2588 \u2591\u2588\u2588 \u2592\u2588\u2588   \u2588\u2588\u2591  \u2592   \u2588\u2588\u2592\u2591\u2593\u2588 \u2591\u2588\u2588    \r\n \u2593\u2588   \u2593\u2588\u2588\u2592\u2591\u2588\u2588\u2593 \u2592\u2588\u2588\u2592\u2592\u2588\u2588\u2592 \u2588\u2584\u2593\u2588   \u2593\u2588\u2588\u2592\u2592\u2588\u2588\u2592 \u2591  \u2591\u2591\u2588\u2588\u2593 \u2592\u2588\u2588\u2592 \u2593\u2588   \u2593\u2588\u2588\u2592 \u2592\u2588\u2588\u2592 \u2591 \u2591\u2588\u2588\u2591\u2592\u2588\u2588\u2592   \u2591\u2588\u2588\u2592   \u2591\u2592\u2593\u2588\u2588\u2588\u2580\u2592\u2591\u2593\u2588\u2592\u2591\u2588\u2588\u2593\u2591 \u2588\u2588\u2588\u2588\u2593\u2592\u2591\u2592\u2588\u2588\u2588\u2588\u2588\u2588\u2592\u2592\u2591\u2593\u2588\u2592\u2591\u2588\u2588\u2593   \r\n \u2592\u2592   \u2593\u2592\u2588\u2591\u2591 \u2592\u2593 \u2591\u2592\u2593\u2591\u2592 \u2592\u2592 \u2593\u2592\u2592\u2592   \u2593\u2592\u2588\u2591\u2592\u2593\u2592\u2591 \u2591  \u2591\u2591 \u2592\u2593 \u2591\u2592\u2593\u2591 \u2592\u2592   \u2593\u2592\u2588\u2591 \u2592 \u2591\u2591   \u2591\u2593  \u2591 \u2592\u2591   \u2591  \u2591    \u2591\u2592   \u2592  \u2592 \u2591\u2591\u2592\u2591\u2592\u2591 \u2592\u2591\u2592\u2591\u2592\u2591 \u2592 \u2592\u2593\u2592 \u2592 \u2591 \u2592 \u2591\u2591\u2592\u2591\u2592   \r\n  \u2592   \u2592\u2592 \u2591  \u2591\u2592 \u2591 \u2592\u2591\u2591 \u2591\u2592 \u2592\u2591 \u2592   \u2592\u2592 \u2591\u2591\u2592 \u2591       \u2591\u2592 \u2591 \u2592\u2591  \u2592   \u2592\u2592 \u2591   \u2591     \u2592 \u2591\u2591  \u2591      \u2591     \u2591   \u2591  \u2592 \u2591\u2592\u2591 \u2591  \u2591 \u2592 \u2592\u2591 \u2591 \u2591\u2592  \u2591 \u2591 \u2592 \u2591\u2592\u2591 \u2591   \r\n  \u2591   \u2592     \u2591\u2591   \u2591 \u2591 \u2591\u2591 \u2591  \u2591   \u2592   \u2591\u2591         \u2591\u2591   \u2591   \u2591   \u2592    \u2591       \u2592 \u2591\u2591      \u2591      \u2591 \u2591   \u2591  \u2591  \u2591\u2591 \u2591\u2591 \u2591 \u2591 \u2592  \u2591  \u2591  \u2591   \u2591  \u2591\u2591 \u2591   \r\n      \u2591  \u2591   \u2591     \u2591  \u2591        \u2591  \u2591            \u2591           \u2591  \u2591         \u2591         \u2591            \u2591  \u2591  \u2591  \u2591    \u2591 \u2591        \u2591   \u2591  \u2591  \u2591   \r\n                                                                                                                                      \r\n'+
+                ' \n Type help to know the available commands'+
+                
+                ' \n Type clr to clear the console'+
+                ' \n Refresh browser to generate home'+
+                ' \n'+
+                ' \n------------------------------------------------------------------------------------------------------------------------------------------------'+'\n'
+
+
+
+
+        });
+    </script>
+</body>
+
+</html>
